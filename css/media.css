@@ -1,0 +1,27 @@
+@media (max-width: 768px){
+    .menu-btn{
+        display: flex;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .menu-btn.active span:before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .menu-btn.active span:after{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .menu-btn.active{
+        animation: snow 2s infinite;
+    }
+    @keyframes snow {
+        0%{
+            transform: rotate(360deg) scale(2);
+        }
+        100%{
+            transform: rotate(0deg)scale(1);
+        }
+    }
+}
